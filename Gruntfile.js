@@ -80,7 +80,8 @@ module.exports = function (grunt) {
       ],
       concat: 'build/canadarm.js',
       options: {
-        jshintrc: true
+        jshintrc: true,
+        reporterOutput: ""
       }
     }
   });
