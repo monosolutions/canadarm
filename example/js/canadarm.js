@@ -612,7 +612,7 @@ Canadarm.Handler.consoleLogHandler = consoleLogHandler;
 function _watchFn(fn, context, settings) {
   //Exit if there is no function to add the wrapper to
   if(!fn || typeof fn !== 'function' ){
-    return false;
+    fn = function(){};
   }
 
   // Exit function early if it has already
